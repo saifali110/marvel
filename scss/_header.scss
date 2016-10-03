@@ -1,0 +1,29 @@
+
+/* =========== Application Header ======= */
+
+
+header{
+	
+	background:transparent;
+	position:absolute;
+	text-align:center;
+	width:100%;
+	z-index:2;
+
+	.logo{
+
+		padding:10px 0;
+		background-image:url(../images/logo.jpg);
+		background-size:contain;
+		height:80px;
+		width:200px;
+
+		@include media-breakpoint-down(sm) { 
+
+			height:40px;
+			width:100px;
+		}
+
+	}
+}
+

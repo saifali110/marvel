@@ -1,0 +1,143 @@
+/* =========== Application Content ======= */
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "colors";
+@import "typography";
+@import "components";
+@import "header";
+@import "footer";
+
+body{
+	
+	background-color:$light-gray;
+}
+
+/* -------- Jumbotron Styling -------- */
+
+.marvel-jumbotron{
+	
+	background-image:url(../images/jumbtron.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	height:550px;
+	position:relative;
+	text-align:center;
+	margin-bottom:0;
+
+	h1{
+		color:white;
+		padding:10px;
+		@include media-breakpoint-down(xs) { 
+
+			font-size:42px;
+		}
+	}
+
+	h2{
+		color:$light-gray;
+		font-size:28px;
+		padding:10px;
+		margin-bottom:40px;
+	}
+
+	.jumbotron-details{
+
+		position:absolute;
+		bottom:130px;
+		right:0;
+		left:0;
+
+		@include media-breakpoint-down(sm) { 
+
+			bottom:75px;
+		}
+	}
+}
+
+/* --------- Content Styling --------- */
+
+.marvel-story{
+	
+	text-align:center;
+	margin-top:50px;
+	
+	h1{
+		color:$dark-brown;
+		margin-bottom:10px;
+		text-transform:uppercase;
+		letter-spacing:1px;
+	}
+
+	h3{
+		color:$dark-brown;
+	}
+}
+
+.story-characters{
+	
+	text-align:center;
+	margin:20px 0 30px 0;
+	padding:30px 0 10px 0;
+	border-radius:5px;
+
+	.charcters-list{
+
+		padding-left:0;
+		display:inline;
+	}
+
+	.single-chracter{
+
+		display:inline-table;
+		max-width:260px;
+		margin:5px;
+
+		h2{
+			padding:10px;
+			font-size:15px;
+			font-weight:bold;
+			text-transform:uppercase;
+			background-color:$dark-brown;
+			color:$light-gray;
+			font-family:inherit;
+		}
+		.marvel-card{
+
+			width:260px;
+			border-radius:0;
+		}
+		.marvel-card-image{
+			
+			width:100%;
+			height:275px;
+			display:block;
+			background-size:cover;
+			background-repeat:no-repeat;
+		}
+
+		.marvel-card-block{
+			
+			padding:15px;
+		}
+
+		.marvel-card-text {
+
+		   text-align:left;
+		}
+
+		.no-description{
+			
+			p{
+				line-height:167px;
+			}
+		}
+
+		.marvel-card-footer{
+
+			float:right;
+			padding:10px 0 0 0;
+		}
+	}
+}

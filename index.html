@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" ng-app="marvelApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Marvel | Test Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <a href="#"><div class="logo"></div> </a>       
+      </div>
+    </header>
+
+    <div ng-view></div>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/blueimp-md5/js/md5.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/controllers/controller.js"></script>
+    <script src="js/services/storyService.js"></script>
+    <script src="js/services/appConstants.js"></script>
+    <script src="js/services/hashEncode.js"></script>
+
+
+  </body>
+</html>

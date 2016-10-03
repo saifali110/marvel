@@ -1,0 +1,44 @@
+
+<div class="jumbotron jumbotron-fluid marvel-jumbotron">
+  <div class="container">
+    <div class="jumbotron-details">
+      <h1 class="display-4">MIGHTY THOR FOCUSES ON THE HISTORY OF MJOLNIR</h1>
+      <h2>FRAZER IRVING HAMMERS HOME THE MIGHTY THOR</h2>
+      <button type="button" class="btn btn-danger btn-lg btn-marvel">Shop Now</button>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+
+          <div class="marvel-story" ng-repeat="story in stories">
+            <h1>{{story.title}}</h1>
+            <h3>{{story.description}}</h3>
+          </div>
+
+          <div class="story-characters" >
+            <ul class="charcters-list" ng-repeat="character in characters">
+              <li class="single-chracter" >
+                <div class="card marvel-card">
+                  <div class="marvel-card-image" style="background-image:url('{{character.thumbnail.path}}.jpg');"></div>
+                  <h2>{{character.name}}</h2>
+                  <div class="card-block marvel-card-block">
+                    <p class="card-text marvel-card-text">{{character.description}}</p>
+                    <div class="no-description" ng-if="character.description==''">
+                      <p class="card-text" >No description is available</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<footer>
+  <p>{{attributionText}}</p>
+</footer>
